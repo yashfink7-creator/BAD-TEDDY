@@ -1,0 +1,852 @@
+/* =====================================================
+   SAVED ADDRESS PAGE
+===================================================== */
+
+.saved-address-page {
+    min-height: 100vh;
+    background: #090909;
+    color: #f5f5f5;
+    padding-bottom: 110px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.saved-address-header {
+    height: 76px;
+    width: 100%;
+    padding: 0 42px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    border-bottom: 1px solid #222;
+
+    background: rgba(9, 9, 9, 0.96);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.saved-address-back {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #2b2b2b;
+    border-radius: 50%;
+
+    background: #111;
+    color: #fff;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.25s ease;
+}
+
+
+.saved-address-back:hover {
+    background: #fff;
+    color: #000;
+    transform: translateX(-3px);
+}
+
+
+.saved-address-logo {
+    width: 105px;
+    height: auto;
+    display: block;
+}
+
+
+.saved-address-header-actions {
+    justify-self: end;
+
+    display: flex;
+    gap: 12px;
+}
+
+
+.saved-header-icon {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #292929;
+    border-radius: 50%;
+
+    background: #111;
+    color: #fff;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.25s ease;
+}
+
+
+.saved-header-icon:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.saved-address-main {
+    width: min(1050px, calc(100% - 40px));
+    margin: 0 auto;
+
+    padding: 60px 0 50px;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.saved-address-heading {
+    margin-bottom: 40px;
+}
+
+
+.saved-address-heading > span {
+    display: block;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+
+    color: #999;
+
+    margin-bottom: 13px;
+}
+
+
+.saved-address-heading h1 {
+    margin: 0;
+
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+}
+
+
+.saved-address-heading p {
+    margin-top: 17px;
+
+    max-width: 620px;
+
+    color: #8e8e8e;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.saved-address-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.address-card {
+    background: #101010;
+
+    border: 1px solid #252525;
+
+    padding: 34px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.address-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #D4AF37,
+        transparent
+    );
+}
+
+
+.address-card-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 32px;
+}
+
+
+.address-number {
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid #D4AF37;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #D4AF37;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+.address-card-heading span {
+    display: block;
+
+    font-size: 10px;
+    letter-spacing: 3px;
+
+    color: #777;
+
+    margin-bottom: 4px;
+}
+
+
+.address-card-heading h2 {
+    margin: 0;
+
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.address-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+.address-field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.address-field.full {
+    grid-column: 1 / -1;
+}
+
+
+.address-field label {
+    margin-bottom: 9px;
+
+    color: #bcbcbc;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.address-field label span {
+    color: #666;
+
+    margin-left: 7px;
+
+    text-transform: none;
+
+    letter-spacing: 0;
+}
+
+
+.address-field input,
+.address-field textarea {
+    width: 100%;
+
+    border: 1px solid #292929;
+
+    background: #080808;
+
+    color: #fff;
+
+    padding: 15px 16px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    transition: 0.25s ease;
+}
+
+
+.address-field textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+
+.address-field input::placeholder,
+.address-field textarea::placeholder {
+    color: #4e4e4e;
+}
+
+
+.address-field input:focus,
+.address-field textarea:focus {
+    border-color: #D4AF37;
+
+    box-shadow:
+        0 0 0 1px rgba(201, 255, 0, 0.08);
+}
+
+
+.address-field small {
+    margin-top: 7px;
+
+    color: #ff6b6b;
+
+    font-size: 11px;
+}
+
+
+
+/* =====================================================
+   PHONE
+===================================================== */
+
+.phone-input {
+    display: flex;
+
+    border: 1px solid #292929;
+
+    background: #080808;
+
+    transition: 0.25s ease;
+}
+
+
+.phone-input:focus-within {
+    border-color: #D4AF37;
+}
+
+
+.phone-input span {
+    padding: 15px 14px;
+
+    color: #777;
+
+    border-right: 1px solid #292929;
+
+    font-size: 13px;
+}
+
+
+.phone-input input {
+    border: none !important;
+
+    flex: 1;
+
+    background: transparent;
+}
+
+
+.phone-input input:focus {
+    box-shadow: none !important;
+}
+
+
+
+/* =====================================================
+   SECURITY
+===================================================== */
+
+.address-security {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 19px 22px;
+
+    background: #0d0d0d;
+
+    border: 1px solid #202020;
+}
+
+
+.address-security > i {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: rgba(201, 255, 0, 0.08);
+
+    color: #D4AF37;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.address-security strong {
+    display: block;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+
+.address-security span {
+    display: block;
+
+    color: #707070;
+
+    font-size: 11px;
+}
+
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.address-actions {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 5px;
+}
+
+
+.clear-address-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    padding: 14px 0;
+
+    transition: 0.2s ease;
+}
+
+
+.clear-address-btn:hover {
+    color: #ff6868;
+}
+
+
+.clear-address-btn i {
+    margin-right: 8px;
+}
+
+
+.save-address-btn {
+    min-width: 230px;
+
+    padding: 17px 25px;
+
+    border: none;
+
+    background: #D4AF37;
+
+    color: #050505;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    transition: 0.25s ease;
+}
+
+
+.save-address-btn:hover {
+    background: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+.save-address-btn:active {
+    transform: translateY(0);
+}
+
+
+
+/* =====================================================
+   SUCCESS
+===================================================== */
+
+.address-success {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 17px 20px;
+
+    border: 1px solid rgba(201, 255, 0, 0.25);
+
+    background: rgba(201, 255, 0, 0.04);
+
+    animation: addressSuccess 0.3s ease;
+}
+
+
+.address-success > i {
+    color: #D4AF37;
+
+    font-size: 22px;
+}
+
+
+.address-success strong {
+    display: block;
+
+    color: #D4AF37;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+
+.address-success span {
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+@keyframes addressSuccess {
+
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/* =====================================
+   BOTTOM NAVIGATION
+===================================== */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: min(680px, calc(100% - 40px));
+    height: 72px;
+
+    background: rgba(10, 10, 10, 0.96);
+    border: 1px solid #292929;
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0 20px;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(15px);
+}
+
+
+/* NAV ITEM */
+
+.bottom-nav a {
+    flex: 1;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    color: #777;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+
+/* ICON */
+
+.bottom-nav a i {
+    font-size: 20px;
+
+    transition: all 0.25s ease;
+}
+
+
+/* TEXT */
+
+.bottom-nav a span {
+    font-size: 12px;
+    letter-spacing: 0.2px;
+}
+
+
+/* HOVER */
+
+.bottom-nav a:hover {
+    color: #d4af37;
+}
+
+
+/* ACTIVE */
+
+.bottom-nav a.active {
+    color: #d4af37;
+}
+
+
+/* ACTIVE ICON */
+
+.bottom-nav a.active i {
+    color: #d4af37;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .bottom-nav {
+        bottom: 12px;
+
+        width: calc(100% - 24px);
+
+        height: 68px;
+
+        padding: 0 8px;
+
+        border-radius: 34px;
+    }
+
+    .bottom-nav a {
+        gap: 4px;
+    }
+
+    .bottom-nav a i {
+        font-size: 19px;
+    }
+
+    .bottom-nav a span {
+        font-size: 11px;
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .saved-address-header {
+        height: 65px;
+
+        padding: 0 18px;
+    }
+
+
+    .saved-address-logo {
+        width: 88px;
+    }
+
+
+    .saved-address-back,
+    .saved-header-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .saved-address-main {
+        width: calc(100% - 28px);
+
+        padding: 38px 0 35px;
+    }
+
+
+    .saved-address-heading h1 {
+        font-size: 39px;
+    }
+
+
+    .address-card {
+        padding: 22px 18px;
+    }
+
+
+    .address-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .address-field.full {
+        grid-column: auto;
+    }
+
+
+    .address-card-heading {
+        margin-bottom: 25px;
+    }
+
+
+    .address-actions {
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+
+    .save-address-btn {
+        width: 100%;
+    }
+
+
+    .clear-address-btn {
+        text-align: center;
+    }
+
+
+    .address-security {
+        align-items: flex-start;
+    }
+
+
+    .myorders-bottom-nav {
+        height: 76px;
+
+        width: calc(100% - 18px);
+
+        bottom: 5px;
+
+        border-radius: 0 0 28px 28px;
+    }
+
+
+    .myorders-bottom-nav a {
+        gap: 5px;
+        font-size: 10px;
+    }
+
+
+    .myorders-bottom-nav a i {
+        font-size: 18px;
+    }
+
+}
+
+.text-col{
+    color:white;
+}

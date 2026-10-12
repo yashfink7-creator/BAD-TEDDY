@@ -1,0 +1,1490 @@
+/* =========================================================
+   BAD TEDDY — AI ASSISTANT
+   Premium Black + Gold / Cream Theme
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.assistant-page {
+    min-height: 100vh;
+    background: #0b0b0b;
+    color: #f5f1e8;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 95px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.assistant-header {
+    height: 78px;
+    width: 100%;
+    background: #0b0b0b;
+    border-bottom: 1px solid rgba(201, 168, 92, 0.18);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+
+/* Logo */
+
+.assistant-brand {
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.assistant-brand img {
+    width: 105px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Header title */
+
+.assistant-header-title {
+    text-align: center;
+    line-height: 1.1;
+}
+
+.assistant-header-title span {
+    display: block;
+
+    font-size: 9px;
+    letter-spacing: 3px;
+
+    color: #c9a85c;
+
+    font-weight: 600;
+}
+
+.assistant-header-title h1 {
+    margin: 3px 0 0;
+
+    font-size: 17px;
+    letter-spacing: 2px;
+
+    color: #f5f1e8;
+
+    font-weight: 700;
+}
+
+
+/* Header button */
+
+.assistant-header-btn {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(201, 168, 92, 0.35);
+
+    background: #111;
+
+    color: #c9a85c;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.assistant-header-btn:hover {
+    background: #c9a85c;
+    color: #0b0b0b;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.assistant-main {
+    width: min(1100px, 92%);
+    margin: auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.assistant-hero {
+    margin-top: 35px;
+
+    min-height: 250px;
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(201, 168, 92, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #151515,
+            #0c0c0c
+        );
+
+    border: 1px solid rgba(201, 168, 92, 0.22);
+}
+
+
+/* Decorative glow */
+
+.assistant-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    right: -80px;
+    bottom: -100px;
+
+    border: 1px solid rgba(201, 168, 92, 0.15);
+}
+
+
+/* AI icon */
+
+.assistant-hero-icon {
+    min-width: 80px;
+    height: 80px;
+
+    border-radius: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        145deg,
+        #d4b76a,
+        #a9873f
+    );
+
+    color: #111;
+
+    font-size: 30px;
+
+    box-shadow:
+        0 10px 35px rgba(201, 168, 92, 0.15);
+}
+
+
+/* Hero content */
+
+.assistant-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.assistant-label {
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
+
+    color: #c9a85c;
+
+    font-weight: 600;
+}
+
+.assistant-hero-content h2 {
+    margin: 10px 0;
+
+    font-size: clamp(28px, 4vw, 45px);
+
+    line-height: 1.12;
+
+    font-weight: 500;
+}
+
+.assistant-hero-content h2 strong {
+    color: #c9a85c;
+}
+
+.assistant-hero-content p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #aaa;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   AI TOOLS
+========================================================= */
+
+.assistant-tools {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 22px;
+}
+
+
+.assistant-tool {
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 17px 20px;
+
+    border-radius: 17px;
+
+    border: 1px solid #222;
+
+    background: #111;
+
+    color: #f5f1e8;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.assistant-tool:hover,
+.assistant-tool.active {
+    border-color: rgba(201, 168, 92, 0.5);
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(201, 168, 92, 0.10),
+            #111
+        );
+}
+
+
+/* Tool icon */
+
+.tool-icon {
+    min-width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: rgba(201, 168, 92, 0.12);
+
+    color: #c9a85c;
+
+    font-size: 18px;
+}
+
+
+.assistant-tool strong {
+    display: block;
+
+    font-size: 14px;
+
+    margin-bottom: 4px;
+}
+
+.assistant-tool span {
+    display: block;
+
+    color: #888;
+
+    font-size: 11px;
+}
+
+.tool-arrow {
+    margin-left: auto;
+
+    color: #666;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CHAT SECTION
+========================================================= */
+
+.assistant-chat-section {
+    margin-top: 25px;
+
+    border-radius: 22px;
+
+    background: #111;
+
+    border: 1px solid #222;
+
+    overflow: hidden;
+}
+
+
+/* Chat heading */
+
+.chat-heading {
+    min-height: 65px;
+
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #222;
+}
+
+
+.chat-heading > div {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.online-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #c9a85c;
+
+    box-shadow:
+        0 0 10px rgba(201, 168, 92, 0.7);
+}
+
+
+.chat-heading strong {
+    font-size: 14px;
+}
+
+.chat-status {
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   CHAT MESSAGES
+========================================================= */
+
+.chat-messages {
+    min-height: 300px;
+    max-height: 420px;
+
+    padding: 25px;
+
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: #444 transparent;
+}
+
+
+/* Empty state */
+
+.chat-empty {
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.empty-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(201, 168, 92, 0.10);
+
+    color: #c9a85c;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.chat-empty h3 {
+    margin: 0 0 7px;
+
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+.chat-empty p {
+    max-width: 430px;
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* Messages */
+
+.chat-message {
+    display: flex;
+
+    margin-bottom: 14px;
+}
+
+.chat-message.user {
+    justify-content: flex-end;
+}
+
+.chat-message.assistant {
+    justify-content: flex-start;
+}
+
+
+.message-bubble {
+    max-width: 75%;
+
+    padding: 12px 16px;
+
+    border-radius: 15px;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.chat-message.user .message-bubble {
+    background: #c9a85c;
+
+    color: #111;
+
+    border-bottom-right-radius: 4px;
+}
+
+
+.chat-message.assistant .message-bubble {
+    background: #1b1b1b;
+
+    color: #ddd;
+
+    border: 1px solid #292929;
+
+    border-bottom-left-radius: 4px;
+}
+
+
+/* =========================================================
+   TYPING
+========================================================= */
+
+.message-bubble.typing {
+    display: flex;
+
+    gap: 5px;
+
+    padding: 13px 16px;
+}
+
+
+.typing span {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #c9a85c;
+
+    animation: typingAnimation 1.2s infinite;
+}
+
+
+.typing span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.typing span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+
+@keyframes typingAnimation {
+
+    0%,
+    60%,
+    100% {
+        opacity: 0.3;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+}
+
+
+/* =========================================================
+   QUICK PROMPTS
+========================================================= */
+
+.quick-prompts {
+    padding: 0 20px 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+
+.quick-prompts > span {
+    color: #666;
+
+    font-size: 10px;
+
+    margin-right: 3px;
+}
+
+
+.quick-prompts button {
+    padding: 7px 12px;
+
+    border-radius: 30px;
+
+    border: 1px solid #292929;
+
+    background: #171717;
+
+    color: #aaa;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.quick-prompts button:hover {
+    border-color: #c9a85c;
+
+    color: #c9a85c;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.assistant-input-wrapper {
+    margin: 0 18px 18px;
+
+    min-height: 58px;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 8px 8px 8px 16px;
+
+    border-radius: 15px;
+
+    background: #080808;
+
+    border: 1px solid #282828;
+
+    transition: 0.2s ease;
+}
+
+
+.assistant-input-wrapper:focus-within {
+    border-color: rgba(201, 168, 92, 0.55);
+
+    box-shadow:
+        0 0 0 3px rgba(201, 168, 92, 0.05);
+}
+
+
+.assistant-input-wrapper textarea {
+    flex: 1;
+
+    resize: none;
+
+    min-height: 38px;
+    max-height: 100px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #f5f1e8;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    padding: 10px 0;
+}
+
+
+.assistant-input-wrapper textarea::placeholder {
+    color: #555;
+}
+
+
+/* Send button */
+
+.send-message-btn {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #c9a85c;
+
+    color: #111;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.send-message-btn:hover:not(:disabled) {
+    background: #dfc477;
+
+    transform: translateY(-2px);
+}
+
+
+.send-message-btn:disabled {
+    background: #252525;
+
+    color: #555;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   RECOMMENDED PRODUCTS
+========================================================= */
+
+.assistant-products {
+    margin-top: 35px;
+}
+
+
+.assistant-section-heading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+}
+
+
+.assistant-section-heading span {
+    display: block;
+
+    color: #c9a85c;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+
+.assistant-section-heading h2 {
+    margin: 0;
+
+    font-size: 22px;
+
+    font-weight: 500;
+}
+
+
+.assistant-section-heading > i {
+    color: #c9a85c;
+
+    font-size: 18px;
+}
+
+
+/* Product row */
+
+.assistant-product-row {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+/* Product card */
+
+.assistant-product-card {
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #f5f1e8;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    min-width: 0;
+}
+
+
+.assistant-product-image {
+    position: relative;
+
+    height: 250px;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    background: #151515;
+
+    border: 1px solid #222;
+}
+
+
+.assistant-product-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+
+.assistant-product-card:hover
+.assistant-product-image img {
+    transform: scale(1.05);
+}
+
+
+/* AI Pick badge */
+
+.ai-match {
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 5px 8px;
+
+    border-radius: 20px;
+
+    background: rgba(11, 11, 11, 0.88);
+
+    color: #c9a85c;
+
+    font-size: 8px;
+
+    border: 1px solid rgba(201, 168, 92, 0.25);
+}
+
+
+.assistant-product-info {
+    padding: 10px 2px;
+}
+
+
+.assistant-product-info h3 {
+    margin: 0 0 4px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.assistant-product-info p {
+    margin: 0;
+
+    color: #c9a85c;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   INFORMATION CARD
+========================================================= */
+
+.assistant-info-card {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(201, 168, 92, 0.09),
+            rgba(255, 255, 255, 0.015)
+        );
+
+    border: 1px solid rgba(201, 168, 92, 0.16);
+}
+
+
+.info-card-icon {
+    min-width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: rgba(201, 168, 92, 0.12);
+
+    color: #c9a85c;
+}
+
+
+.assistant-info-card span {
+    color: #c9a85c;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+}
+
+
+.assistant-info-card h3 {
+    margin: 5px 0 5px;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+
+.assistant-info-card p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BOTTOM NAVIGATION
+========================================================= */
+
+.bottom-nav {
+    position: fixed;
+
+    bottom: 15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: min(500px, 92%);
+
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 6px;
+
+    border-radius: 22px;
+
+    background: rgba(15, 15, 15, 0.96);
+
+    border: 1px solid rgba(201, 168, 92, 0.22);
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.65);
+
+    backdrop-filter: blur(15px);
+
+    z-index: 100;
+}
+
+
+.bottom-nav-item {
+    width: 70px;
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    border-radius: 16px;
+
+    color: #666;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+
+.bottom-nav-item i {
+    font-size: 16px;
+}
+
+
+.bottom-nav-item span {
+    font-size: 9px;
+
+    font-weight: 500;
+}
+
+
+.bottom-nav-item:hover {
+    color: #c9a85c;
+}
+
+
+.bottom-nav-item.active {
+    color: #c9a85c;
+
+    background: rgba(201, 168, 92, 0.10);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .assistant-main {
+        width: 94%;
+    }
+
+    .assistant-hero {
+        padding: 30px;
+    }
+
+    .assistant-product-row {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .assistant-product-image {
+        height: 260px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .assistant-page {
+        padding-bottom: 100px;
+    }
+
+
+    .assistant-header {
+        height: 68px;
+
+        padding: 0 18px;
+    }
+
+
+    .assistant-brand {
+        width: 85px;
+    }
+
+
+    .assistant-brand img {
+        width: 78px;
+    }
+
+
+    .assistant-header-title span {
+        font-size: 7px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .assistant-header-title h1 {
+        font-size: 13px;
+    }
+
+
+    .assistant-header-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /* Hero */
+
+    .assistant-hero {
+        margin-top: 20px;
+
+        min-height: auto;
+
+        padding: 25px 20px;
+
+        gap: 17px;
+
+        border-radius: 20px;
+    }
+
+
+    .assistant-hero-icon {
+        min-width: 55px;
+        height: 55px;
+
+        border-radius: 16px;
+
+        font-size: 20px;
+    }
+
+
+    .assistant-label {
+        font-size: 8px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    .assistant-hero-content h2 {
+        font-size: 25px;
+    }
+
+
+    .assistant-hero-content p {
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+
+    /* Tools */
+
+    .assistant-tools {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-top: 15px;
+    }
+
+
+    .assistant-tool {
+        min-height: 70px;
+
+        padding: 12px 15px;
+    }
+
+
+    /* Chat */
+
+    .assistant-chat-section {
+        margin-top: 18px;
+
+        border-radius: 18px;
+    }
+
+
+    .chat-heading {
+        min-height: 58px;
+
+        padding: 0 15px;
+    }
+
+
+    .chat-status {
+        display: none;
+    }
+
+
+    .chat-messages {
+        min-height: 270px;
+
+        padding: 18px;
+    }
+
+
+    .chat-empty {
+        min-height: 220px;
+    }
+
+
+    .chat-empty h3 {
+        font-size: 15px;
+    }
+
+
+    .chat-empty p {
+        font-size: 11px;
+
+        max-width: 280px;
+    }
+
+
+    .message-bubble {
+        max-width: 85%;
+
+        font-size: 12px;
+    }
+
+
+    /* Quick prompts */
+
+    .quick-prompts {
+        padding: 0 13px 12px;
+
+        gap: 6px;
+    }
+
+
+    .quick-prompts > span {
+        width: 100%;
+
+        margin-bottom: 2px;
+    }
+
+
+    .quick-prompts button {
+        font-size: 9px;
+
+        padding: 6px 9px;
+    }
+
+
+    /* Input */
+
+    .assistant-input-wrapper {
+        margin: 0 10px 10px;
+    }
+
+
+    /* Products */
+
+    .assistant-products {
+        margin-top: 25px;
+    }
+
+
+    .assistant-section-heading h2 {
+        font-size: 19px;
+    }
+
+
+    .assistant-product-row {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .assistant-product-image {
+        height: 205px;
+
+        border-radius: 13px;
+    }
+
+
+    .assistant-product-info h3 {
+        font-size: 11px;
+    }
+
+
+    .assistant-product-info p {
+        font-size: 11px;
+    }
+
+
+    /* Info */
+
+    .assistant-info-card {
+        padding: 18px;
+
+        gap: 12px;
+
+        border-radius: 17px;
+    }
+
+
+    .assistant-info-card h3 {
+        font-size: 14px;
+    }
+
+
+    .assistant-info-card p {
+        font-size: 10px;
+    }
+
+
+    /* Bottom navigation */
+
+    .bottom-nav {
+        bottom: 10px;
+
+        width: 94%;
+
+        height: 64px;
+
+        border-radius: 20px;
+    }
+
+
+    .bottom-nav-item {
+        width: 65px;
+
+        height: 52px;
+    }
+
+
+    .bottom-nav-item i {
+        font-size: 15px;
+    }
+
+
+    .bottom-nav-item span {
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .assistant-hero {
+        padding: 20px 15px;
+    }
+
+
+    .assistant-hero-icon {
+        min-width: 48px;
+        height: 48px;
+
+        font-size: 18px;
+    }
+
+
+    .assistant-hero-content h2 {
+        font-size: 21px;
+    }
+
+
+    .assistant-product-image {
+        height: 175px;
+    }
+
+
+    .bottom-nav-item {
+        width: 58px;
+    }
+
+
+}
+
+/* =========================================
+   ASSISTANT HEADER ACTIONS
+========================================= */
+
+.assistant-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* =========================================
+   HEADER ICON
+========================================= */
+
+.assistant-header-btn {
+    position: relative;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+
+    background: #111;
+
+    color: #d4af37;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.assistant-header-btn i {
+    font-size: 18px;
+}
+
+
+.assistant-header-btn:hover {
+    transform: translateY(-2px);
+
+    border-color: #d4af37;
+
+    background: #181818;
+}
+
+
+/* =========================================
+   LIVE COUNT
+========================================= */
+
+.assistant-header-count {
+    position: absolute;
+
+    top: -5px;
+    right: -5px;
+
+    min-width: 19px;
+    height: 19px;
+
+    padding: 0 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #d4af37;
+    color: #000;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    line-height: 1;
+}

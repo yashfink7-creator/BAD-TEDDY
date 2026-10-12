@@ -1,0 +1,303 @@
+{
+  "model_type": "LogisticRegression (Tuned C=10.0)",
+  "vocabulary_size": 1115,
+  "num_classes": 28,
+  "classes": [
+    "bestsellers_trending_drops",
+    "brand_story",
+    "budget_under_1000",
+    "budget_under_2000",
+    "budget_under_3000",
+    "conversational_continuation",
+    "fabric_quality_materials",
+    "goodbye",
+    "greeting",
+    "order_tracking_support",
+    "outfit_casual",
+    "outfit_college",
+    "outfit_date_night",
+    "outfit_gym_workout",
+    "outfit_party",
+    "outfit_trip_travel",
+    "product_caps_accessories",
+    "product_cargos_pants",
+    "product_cheapest",
+    "product_hoodies",
+    "product_search_size",
+    "product_tshirts",
+    "return_exchange_policy",
+    "shipping_delivery_time",
+    "size_fit_guidance",
+    "size_fitting_query",
+    "size_oversized_fit",
+    "thanks"
+  ],
+  "train_accuracy": 1.0,
+  "test_accuracy": 0.7326,
+  "macro_precision": 0.7786,
+  "macro_recall": 0.7286,
+  "macro_f1": 0.7216,
+  "weighted_f1": 0.7291,
+  "intent_metadata": {
+    "greeting": {
+      "responses": [
+        "Hey! Welcome to Bad Teddy AI Studio. What streetwear look, outfit, or size can I help you with today?",
+        "Yo! I'm your Bad Teddy Fashion Assistant. Looking for outfit ideas, sizing help, or fresh catalog drops?",
+        "Hello! Ready to upgrade your drip? Ask me about outfits, styles, sizes, or our latest collection."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "goodbye": {
+      "responses": [
+        "Catch you later! Keep rocking the Bad Teddy drip.",
+        "Peace out! Come back anytime you need fresh streetwear inspiration.",
+        "See you soon! Stay stylish and confident."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "thanks": {
+      "responses": [
+        "Always happy to help you style! Let me know if you need anything else.",
+        "You're welcome! Wear it with confidence.",
+        "Glad I could help! Check out the shop to cop your favorite pieces."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "brand_story": {
+      "responses": [
+        "Bad Teddy is a premium contemporary streetwear label blending bold urban aesthetics, heavyweight fabrics, and effortless oversized silhouettes designed for unapologetic self-expression.",
+        "Bad Teddy was born out of raw urban culture — crafted for those who value premium heavyweight cotton, relaxed fits, and statement streetwear pieces."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "outfit_college": {
+      "responses": [
+        "For an effortless college look, pair our Oversized Signature Tee (₹999) with Relaxed Cargo Pants (₹1,599) and clean white sneakers. Add the Signature Cap to complete the campus vibe.",
+        "On campus, comfort meets style: rock our Graphic Boxy Tee with relaxed utility cargos and canvas trainers.",
+        "For college lectures or fests, pair our Signature Heavyweight Tee with multi-pocket cargo pants and minimal streetwear accessories."
+      ],
+      "category_hint": "T-Shirts",
+      "budget_max": null,
+      "context_set": "college_styling"
+    },
+    "outfit_party": {
+      "responses": [
+        "For a party look, I recommend our Premium Black Hoodie (₹1,799) or Dark Graphic Tee (₹999) paired with relaxed black cargos and high-top sneakers. Keep accessories minimal with a silver chain.",
+        "For night parties or clubbing, go all-black: an Oversized Heavyweight Graphic Tee with relaxed utility pants and standout sneakers.",
+        "Make a statement at the party with our Midnight Oversized Tee layered over minimal jewelry and tailored wide-leg cargos."
+      ],
+      "category_hint": "Hoodies",
+      "budget_max": null,
+      "context_set": "party_styling"
+    },
+    "outfit_trip_travel": {
+      "responses": [
+        "For a trip or long travel, comfort and utility are key! Pair our Relaxed Cargo Pants (multi-pockets for your passport and phone) with our breathable Oversized Signature Tee (₹999) and our Premium Hoodie for chilly flights.",
+        "Airport & trip look: Go with our Heavyweight Fleece Hoodie layered over a Boxy Tee, paired with relaxed cargos and comfortable sneakers. Throw on the Signature Cap to block out cabin light.",
+        "For weekend getaways or road trips, pack our versatile Oversized Tee and tactical Relaxed Cargos — effortless style that stays comfortable all day."
+      ],
+      "category_hint": "Jeans",
+      "budget_max": null,
+      "context_set": "travel_styling"
+    },
+    "outfit_casual": {
+      "responses": [
+        "For an effortless casual vibe, you can never go wrong with a neutral Oversized Tee (₹999), relaxed fit cargos (₹1,599), and classic canvas sneakers.",
+        "Keep it clean and comfortable: pair our Classic Fleece Hoodie with relaxed jeans or cargos for an everyday streetwear aesthetic.",
+        "For a weekend chill look, rock a boxy drop-shoulder tee with drawstring cargo pants and low-profile sneakers."
+      ],
+      "category_hint": "T-Shirts",
+      "budget_max": null,
+      "context_set": "casual_styling"
+    },
+    "outfit_gym_workout": {
+      "responses": [
+        "Our Oversized Heavyweight Tees make the ultimate pump covers! Made with 100% breathable cotton, they keep you looking dominant during heavy training sessions.",
+        "For gym sessions, throw on our Boxy Tee with active track pants or shorts for a high-intensity pump cover aesthetic."
+      ],
+      "category_hint": "T-Shirts",
+      "budget_max": null,
+      "context_set": ""
+    },
+    "outfit_date_night": {
+      "responses": [
+        "For a date night, balance relaxed streetwear with clean sophistication: wear our Minimal Black Oversized Tee with tailored dark trousers, crisp sneakers, and a subtle watch.",
+        "On a dinner date, try our Premium Heavyweight Hoodie in a neutral tone paired with slim-straight dark denim and minimalist leather sneakers."
+      ],
+      "category_hint": "T-Shirts",
+      "budget_max": null,
+      "context_set": ""
+    },
+    "product_cheapest": {
+      "responses": [
+        "Our most affordable pieces start with the Signature Teddy Cap at ₹799, followed by our Oversized Signature Tee and Street Graphic Tee at ₹999. Check the live results below!",
+        "For the best budget-friendly picks, check out our Caps (₹799) and Oversized Tees (₹999) — premium quality without breaking the bank."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": "cheapest_search"
+    },
+    "product_search_size": {
+      "responses": [
+        "Here are the live Bad Teddy products currently available in your requested size! Every piece is crafted with our signature relaxed drop-shoulder cut.",
+        "Searching the live catalog for your requested size. Here are the in-stock streetwear pieces available right now:"
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": "size_search"
+    },
+    "conversational_continuation": {
+      "responses": [
+        "You can also check out our accessories like the Signature Teddy Cap (₹799) to complete your streetwear aesthetic, or try layering an oversized hoodie over your tee for cooler evenings!",
+        "Another great styling direction is playing with monochrome contrasts: pair a graphic dark tee with relaxed olive or black cargos and clean sneakers for an effortless streetwear rotation.",
+        "Don't forget fit proportion: pairing boxy tops with wide-leg cargos gives you that signature relaxed silhouette. Check out the matching pieces below!"
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": "continuation"
+    },
+    "size_fitting_query": {
+      "responses": [
+        "Our trained anthropometric size model recommends Size M for a balanced streetwear drape, or Size L if you prefer an ultra-relaxed baggy fit.",
+        "Based on standard streetwear proportions, your measurements align with our relaxed cut. Check your exact predicted fit below!"
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": "size_calculation"
+    },
+    "product_hoodies": {
+      "responses": [
+        "Our Signature Heavyweight Hoodies are crafted from 380 GSM custom-knit cotton fleece featuring double-layered hood construction, concealed kangaroo pockets, and dropped shoulders.",
+        "Check out our Premium Black Hoodie at ₹1,799 — our most popular bestseller designed for the ultimate cozy streetwear silhouette."
+      ],
+      "category_hint": "Hoodies",
+      "budget_max": null,
+      "context_set": ""
+    },
+    "product_tshirts": {
+      "responses": [
+        "Our Oversized Tees are engineered from 240 GSM heavy combed cotton with high-density ribbed collars that hold their shape wash after wash.",
+        "Explore our Oversized Signature Tee at ₹999 and Street Graphic Tee at ₹999 for unmatched streetwear drape."
+      ],
+      "category_hint": "T-Shirts",
+      "budget_max": null,
+      "context_set": ""
+    },
+    "product_cargos_pants": {
+      "responses": [
+        "Our Relaxed Cargo Pants (₹1,599) are crafted with multi-functional utility pockets, reinforced stitching, and adjustable ankle toggles for customizable stacking over sneakers.",
+        "Check out our Relaxed Cargo Pants at ₹1,599 — built with heavy cotton twill for durable street wear."
+      ],
+      "category_hint": "Jeans",
+      "budget_max": null,
+      "context_set": ""
+    },
+    "product_caps_accessories": {
+      "responses": [
+        "Our Signature Streetwear Caps feature structured 6-panel embroidery, breathable eyelets, and adjustable metal strap closures.",
+        "Complete your look with our Bad Teddy Signature Cap at ₹799."
+      ],
+      "category_hint": "Caps",
+      "budget_max": null,
+      "context_set": ""
+    },
+    "budget_under_1000": {
+      "responses": [
+        "Under ₹1,000, you can grab our Signature Oversized Tee at ₹999 or our Signature Street Cap at ₹799 for an instant wardrobe upgrade!",
+        "Check out our Oversized Tees (₹999) and Caps (₹799) for premium quality under a ₹1,000 budget."
+      ],
+      "category_hint": null,
+      "budget_max": 1000,
+      "context_set": ""
+    },
+    "budget_under_2000": {
+      "responses": [
+        "Under ₹2,000, you can grab our Premium Black Hoodie at ₹1,799, or our Relaxed Cargo Pants at ₹1,599. You can also pick our ₹999 Tee with a ₹799 Cap!",
+        "For under ₹2,000, build a fresh drip with our Oversized Tee (₹999) and Signature Cap (₹799) with room to spare."
+      ],
+      "category_hint": null,
+      "budget_max": 2000,
+      "context_set": ""
+    },
+    "budget_under_3000": {
+      "responses": [
+        "With ₹3,000, you can build a complete head-to-toe Bad Teddy look: Oversized Tee (₹999) + Relaxed Cargo Pants (₹1,599) = ₹2,598 total!",
+        "Under ₹3,000, grab our Premium Heavyweight Hoodie (₹1,799) paired with our Signature Cap (₹799) for an iconic winter look."
+      ],
+      "category_hint": null,
+      "budget_max": 3000,
+      "context_set": ""
+    },
+    "size_fit_guidance": {
+      "responses": [
+        "All Bad Teddy pieces are cut with a modern relaxed/oversized drop-shoulder silhouette. Tell me your height and weight right here in chat, or use our 'Find My Size' page for a custom Random Forest ML prediction!",
+        "If you prefer an oversized streetwear look, order your standard size. If you prefer a regular tailored fit, consider sizing down one size."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "size_oversized_fit": {
+      "responses": [
+        "Our oversized fits feature dropped shoulder seams, wider chest widths, and tailored body lengths so the garment drapes effortlessly without looking sloppy.",
+        "Stick with your regular size for the intended streetwear boxy drape, or size up if you want an ultra-relaxed skater aesthetic."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "fabric_quality_materials": {
+      "responses": [
+        "We use 100% combed ringspun cotton for our tees (240 GSM) and 380 GSM brushed interior fleece for our hoodies. All fabrics are pre-shrunk and bio-washed for an ultra-soft hand feel.",
+        "Our graphics use high-density screen printing designed to endure 50+ wash cycles without cracking or fading."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "shipping_delivery_time": {
+      "responses": [
+        "We provide FREE standard shipping on all orders above ₹999. Metro deliveries typically arrive in 2-4 business days; rest of India takes 4-7 business days.",
+        "Orders are dispatched within 24-48 hours via trusted partners (Bluedart, Delhivery, Xpressbees) with live SMS & WhatsApp tracking."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "return_exchange_policy": {
+      "responses": [
+        "We offer an easy 7-day hassle-free return and exchange policy from the date of delivery. Items must be unworn, unwashed, and with all original tags intact.",
+        "If the size isn't 100% right, simply request a size exchange from your Profile -> My Orders section, and our courier will pick it up from your doorstep."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "order_tracking_support": {
+      "responses": [
+        "You can track your active orders anytime by visiting the 'My Orders' tab in your profile. You'll also receive live tracking links via SMS and email upon dispatch.",
+        "To check live order progress, head over to your Bad Teddy account dashboard -> My Orders to view live dispatch milestones."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    },
+    "bestsellers_trending_drops": {
+      "responses": [
+        "Our top bestsellers right now are the Premium Black Hoodie (₹1,799), Oversized Signature Tee (₹999), and Relaxed Cargo Pants (₹1,599)!",
+        "Trending drops: Check out our heavy-wash Oversized Boxy Tees and multi-pocket Utility Cargos on the Shop page."
+      ],
+      "category_hint": null,
+      "budget_max": null,
+      "context_set": ""
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-10-01",
+  "models": {
+    "fashion_chatbot_nlp": {
+      "model_architecture": "TF-IDF (1-2 N-Grams) + MLP Neural Network Classifier",
+      "total_training_examples": 428,
+      "num_intent_classes": 30,
+      "vocabulary_size": 1093,
+      "overall_accuracy": 0.9463,
+      "5_fold_cv_mean_accuracy": 0.5561,
+      "5_fold_cv_std": 0.0492,
+      "macro_precision": 0.9511,
+      "macro_recall": 0.9468,
+      "macro_f1": 0.9478,
+      "weighted_f1": 0.9463
+    },
+    "size_recommendation_classifier": {
+      "model_architecture": "Random Forest Classifier (150 Trees, StandardScaler)",
+      "total_samples": 1600,
+      "target_classes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "overall_accuracy": 0.9725,
+      "5_fold_cv_mean_accuracy": 0.8925,
+      "5_fold_cv_std": 0.0109,
+      "macro_precision": 0.9725,
+      "macro_recall": 0.9724,
+      "macro_f1": 0.9724,
+      "weighted_f1": 0.9725,
+      "confusion_matrix": [
+        [
+          303,
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          299,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          300,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          321,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          5,
+          333
+        ]
+      ]
+    }
+  }
+}

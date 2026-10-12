@@ -1,0 +1,436 @@
+/*this is for login page*/
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background:#000;
+    overflow-x:hidden;
+}
+/*MAIN CONTAINER*/
+.container{
+    display:flex;
+    width:100%;
+    min-height:100vh;
+}
+
+/* LEFT SECTION */
+.left{
+    width:50%;
+    position:relative;
+    overflow:hidden;
+}
+.login-bg{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+    animation:zoom 15s infinite alternate;
+}
+
+@keyframes zoom{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.08);
+    }
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    z-index:1;
+}
+
+.brand{
+    position:absolute;
+    left:50px;
+    bottom:60px;
+    color:white;
+    z-index:2;
+}
+
+.brand-logo{
+    width:220px !important;
+    max-width:220px !important;
+    height:auto !important;
+    display:block;
+    object-fit:contain !important;
+    animation:none !important;
+    transform:none !important;
+    margin-bottom:12px;
+}
+
+.brand p{
+    margin-top:10px;
+    font-size:18px;
+    color:#ddd;
+}
+/* RIGHT SECTION */
+
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#111,#1d1d1d);
+    padding:40px;
+}
+
+/*GLASS LOGIN CARD*/
+
+.login-card{
+    width:100%;
+    max-width:430px;
+    padding:45px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.login-card h2{
+    color:white;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#bdbdbd;
+    margin-bottom:35px;
+    line-height:1.6;
+}
+
+/*INPUTS*/
+.input-group{
+    position:relative;
+    margin-bottom:25px;
+}
+
+.input-group input{
+    width:100%;
+    padding:18px 18px 18px 55px;
+    border:2px solid rgba(255,255,255,.15);
+    border-radius:14px;
+    outline:none;
+    background:transparent;
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-group input:focus{
+    border-color:#D4AF37;
+}
+.input-group i{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:#D4AF37;
+}
+
+.input-group label{
+    position:absolute;
+    left:55px;
+    top:18px;
+    color:#aaa;
+    pointer-events:none;
+    transition:.3s;
+    background:#111;
+    padding:0 6px;
+}
+
+.input-group input:focus+label,
+.input-group input:valid+label{
+    top:-10px;
+    font-size:12px;
+    color:#D4AF37;
+}
+
+.toggle-password {
+    position: absolute;
+
+    right: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #d4af37;
+
+    cursor: pointer;
+
+    padding: 0;
+
+    z-index: 10;
+}
+
+.toggle-password i {
+    font-size: 16px;
+}
+
+.toggle-password:hover {
+    color: #ffffff;
+}
+
+/*OPTIONS*/
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    color:#ddd;
+    font-size:14px;
+}
+
+.options a{
+    color:#D4AF37;
+    text-decoration:none;
+}
+
+.options input{
+    margin-right:8px;
+}
+
+/* BUTTON*/
+
+.login-btn{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:50px;
+    background:#D4AF37;
+    color:black;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(212,175,55,.4);
+}
+
+/* DIVIDER*/
+.divider{
+    display:flex;
+    align-items:center;
+    color:#aaa;
+    margin:30px 0;
+}
+.divider span{
+    flex:1;
+    height:1px;
+    background:#555;
+}
+.divider{
+    gap:15px;
+}
+
+/*SOCIAL*/
+
+.social-login{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+}
+
+.social-login button{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:none;
+    background:white;
+    cursor:pointer;
+    font-size:20px;
+    transition:.3s;
+}
+
+.social-login button:hover{
+    background:#D4AF37;
+    transform:translateY(-6px);
+}
+
+/*SIGNUP*/
+
+.signup{
+    margin-top:35px;
+    text-align:center;
+    color:#bbb;
+}
+
+.signup a{
+    color:#D4AF37;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/*RESPONSIVE*/
+@media(max-width:991px){
+.container{
+    flex-direction:column;
+}
+.left{
+    width:100%;
+    height:320px;
+}
+.left img{
+    height:320px;
+}
+
+.brand{
+    left:25px;
+    bottom:25px;
+}
+
+.brand h1{
+    font-size:42px;
+}
+
+.right{
+    width:100%;
+    padding:30px 20px;
+}
+}
+@media(max-width:576px){
+.login-card{
+    padding:30px 22px;
+}
+.login-card h2{
+    font-size:30px;
+}
+.subtitle{
+    font-size:14px;
+}
+.input-group input{
+    padding:16px 16px 16px 50px;
+}
+.login-btn{
+    padding:15px;
+}
+}
+
+/* =========================================
+   LOGIN FUNCTIONAL UI
+========================================= */
+
+.toggle-password {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #888;
+
+    cursor: pointer;
+
+    padding: 5px;
+
+    z-index: 5;
+}
+
+.toggle-password:hover {
+    color: #D4AF37;
+}
+
+
+.login-message {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 10px 0;
+
+    padding: 9px 11px;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+}
+
+
+.login-message.error {
+    color: #ff6b6b;
+
+    background: rgba(255, 80, 80, 0.08);
+
+    border: 1px solid rgba(255, 80, 80, 0.2);
+}
+
+
+.login-message.success {
+    color: #72c98a;
+
+    background: rgba(80, 200, 120, 0.08);
+
+    border: 1px solid rgba(80, 200, 120, 0.2);
+}
+
+
+.forgot-password,
+.signup-link {
+    border: none;
+
+    background: none;
+
+    color: inherit;
+
+    font: inherit;
+
+    cursor: pointer;
+}
+
+
+.forgot-password:hover,
+.signup-link:hover {
+    color: #D4AF37;
+}
+
+
+.login-btn:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}

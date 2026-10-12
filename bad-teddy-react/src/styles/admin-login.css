@@ -1,0 +1,309 @@
+/* =========================================================
+   BAD TEDDY ADMIN PANEL — ADMIN LOGIN STYLES
+   Modern Luxury Streetwear Admin Portal Aesthetics
+   Brand Palette: #0B0B0B, #111111, #151515, #181818, #D4AF37, #FFFFFF
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+.admin-login-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.08) 0%, rgba(11, 11, 11, 1) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.admin-login-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+    background-size: 32px 32px;
+    pointer-events: none;
+}
+
+.admin-login-container {
+    width: 100%;
+    max-width: 440px;
+    background: #131313;
+    border: 1px solid #242424;
+    border-radius: 18px;
+    padding: 36px 32px;
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(212, 175, 55, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 10;
+    backdrop-filter: blur(12px);
+    animation: portalFadeIn 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes portalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Brand Header */
+.admin-login-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #202020;
+}
+
+.admin-login-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: contain;
+    background: #000;
+    border: 1.5px solid rgba(212, 175, 55, 0.4);
+    padding: 4px;
+    margin-bottom: 6px;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+}
+
+.admin-badge {
+    background: rgba(212, 175, 55, 0.12);
+    color: #D4AF37;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 3px 10px;
+    text-transform: uppercase;
+}
+
+.admin-login-brand h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-top: 4px;
+}
+
+.admin-login-brand p {
+    font-size: 12px;
+    color: #888888;
+}
+
+/* Alerts */
+.admin-login-alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    animation: fadeIn 0.2s ease;
+}
+
+.admin-login-alert.error {
+    background: rgba(255, 71, 87, 0.15);
+    border: 1px solid rgba(255, 71, 87, 0.4);
+    color: #FF4757;
+}
+
+.admin-login-alert.success {
+    background: rgba(46, 213, 115, 0.15);
+    border: 1px solid rgba(46, 213, 115, 0.4);
+    color: #2ED573;
+}
+
+/* Form Fields */
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.admin-login-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.admin-login-form label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #AAAAAA;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.admin-login-form label i {
+    color: #D4AF37;
+    font-size: 12px;
+}
+
+.admin-login-form input {
+    background: #181818;
+    border: 1px solid #2A2A2A;
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: #FFFFFF;
+    font-size: 13px;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.admin-login-form input:focus {
+    border-color: #D4AF37;
+    background: #1B1B1B;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.18);
+}
+
+.password-input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-wrap input {
+    width: 100%;
+    padding-right: 44px;
+}
+
+.toggle-password-btn {
+    position: absolute;
+    right: 12px;
+    background: transparent;
+    border: none;
+    color: #777777;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    transition: color 0.2s ease;
+}
+
+.toggle-password-btn:hover {
+    color: #D4AF37;
+}
+
+/* Demo Autofill Hint */
+.demo-credentials-hint {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px dashed rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 11px;
+    color: #CCCCCC;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.demo-credentials-hint:hover {
+    background: rgba(212, 175, 55, 0.15);
+    border-color: #D4AF37;
+}
+
+.demo-credentials-hint i {
+    color: #D4AF37;
+    margin-top: 2px;
+}
+
+.demo-credentials-hint code {
+    color: #D4AF37;
+    font-weight: 600;
+}
+
+/* Submit Button */
+.admin-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #D4AF37 0%, #B89628 100%);
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+    transition: all 0.25s ease;
+    margin-top: 4px;
+}
+
+.admin-submit-btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+    filter: brightness(1.08);
+}
+
+.admin-submit-btn:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+/* Footer Links */
+.admin-login-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 14px;
+    border-top: 1px solid #202020;
+    text-align: center;
+}
+
+.security-notice {
+    font-size: 11px;
+    color: #777777;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.security-notice i {
+    color: #D4AF37;
+}
+
+.back-to-store {
+    font-size: 12px;
+    color: #AAAAAA;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+}
+
+.back-to-store:hover {
+    color: #D4AF37;
+}
+
+@media (max-width: 480px) {
+    .admin-login-container {
+        padding: 26px 20px;
+    }
+}

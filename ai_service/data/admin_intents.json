@@ -1,0 +1,144 @@
+{
+  "admin_intents": [
+    {
+      "intent": "bestsellers",
+      "description": "Inquires about highest volume and highest revenue selling products.",
+      "patterns": [
+        "Which product sold the most?",
+        "What are our top selling products?",
+        "Show me the bestsellers",
+        "Which items have the highest sales volume?",
+        "Top performing product by sales",
+        "Best selling streetwear items",
+        "What is our number one selling product?",
+        "List top 5 products by revenue",
+        "Which shirts or hoodies are selling fastest?",
+        "Show most popular products"
+      ]
+    },
+    {
+      "intent": "low_stock_reorder",
+      "description": "Inquires about low-stock inventory, stockout risks, and recommended restock orders.",
+      "patterns": [
+        "Which products are low on stock?",
+        "Which products need restocking?",
+        "Show low stock items",
+        "What items are running out of stock?",
+        "Do we have any critical stock alerts?",
+        "Show recommended restock quantities",
+        "What should I reorder from the manufacturer?",
+        "Inventory depletion warning list",
+        "Products with less than 15 stock",
+        "Which items will stockout first?"
+      ]
+    },
+    {
+      "intent": "revenue_summary",
+      "description": "Inquires about total store revenue, gross earnings, and average order value.",
+      "patterns": [
+        "What was our total revenue?",
+        "How much did we make in sales?",
+        "Show total earnings and sales revenue",
+        "What is our gross revenue?",
+        "What is our average order value?",
+        "Financial revenue overview",
+        "How much money did Bad Teddy generate?",
+        "Total sales figure to date",
+        "Show revenue metrics",
+        "How profitable are our orders?"
+      ]
+    },
+    {
+      "intent": "category_performance",
+      "description": "Inquires about sales and revenue distribution across product categories.",
+      "patterns": [
+        "Which category performs best?",
+        "Show sales by category",
+        "Category revenue breakdown",
+        "How are hoodies vs t-shirts performing?",
+        "Which category generates the most income?",
+        "Compare category sales volume",
+        "Show category market share",
+        "Is streetwear t-shirts or cargo pants doing better?",
+        "Best selling product category"
+      ]
+    },
+    {
+      "intent": "customer_insights",
+      "description": "Inquires about registered customer base, VIP cohorts, and segmentation.",
+      "patterns": [
+        "How many customers do we have?",
+        "Who are our top spending customers?",
+        "Customer segmentation summary",
+        "Show VIP customers and high spenders",
+        "Registered user base statistics",
+        "Customer RFM analysis",
+        "How many repeat buyers do we have?",
+        "List our best loyal customers",
+        "Show at-risk inactive customers"
+      ]
+    },
+    {
+      "intent": "order_fulfillment",
+      "description": "Inquires about order volume, order statuses, and fulfillment.",
+      "patterns": [
+        "How many orders were placed?",
+        "What is our order status?",
+        "Recent orders summary",
+        "Order fulfillment rate",
+        "Show pending vs confirmed orders",
+        "How many orders did we get?",
+        "Recent order history overview",
+        "Are all orders confirmed?"
+      ]
+    },
+    {
+      "intent": "review_sentiment",
+      "description": "Inquires about customer reviews, satisfaction index, and NLP sentiment polarity.",
+      "patterns": [
+        "What is our customer satisfaction rating?",
+        "How are customer reviews and feedback?",
+        "Sentiment analysis of reviews",
+        "Show average product ratings",
+        "Are customers happy with the fabric and fit?",
+        "Customer feedback score",
+        "Show positive vs negative review summary"
+      ]
+    },
+    {
+      "intent": "slow_moving_stock",
+      "description": "Inquires about stagnant, slow-moving, or overstocked items.",
+      "patterns": [
+        "Which products are slow moving?",
+        "Show overstocked products",
+        "Dead stock or stagnant items",
+        "Least sold products in catalog",
+        "Which items have low sales velocity?",
+        "Zero sales products"
+      ]
+    },
+    {
+      "intent": "inventory_overview",
+      "description": "Inquires about total catalog count, total units in warehouse, and stock value.",
+      "patterns": [
+        "How many total products in stock?",
+        "Inventory overview and warehouse count",
+        "Total catalog size",
+        "How many units do we have in total?",
+        "Total inventory valuation"
+      ]
+    },
+    {
+      "intent": "help_capabilities",
+      "description": "Inquires about what the Admin AI Assistant can do.",
+      "patterns": [
+        "Hello",
+        "Hi Bad Teddy AI",
+        "What can you do?",
+        "Help me with store administration",
+        "What questions can I ask you?",
+        "Show admin assistant commands"
+      ]
+    }
+  ]
+}
