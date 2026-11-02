@@ -10,7 +10,7 @@ import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import Order from "./components/order";
 import Profile from "./components/Profile";
-import Assistant from "./components/Assistant";
+import Assistant from "./components/assistant";
 import SR from "./components/SR";
 import Product from "./components/product";
 import Register from "./components/register";
