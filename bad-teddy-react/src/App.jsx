@@ -6,10 +6,10 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-route
 import Login from "./components/login";
 import Home from "./components/Home";
 import Shop from "./components/shop";
-import Cart from "./components/Cart";
-import Checkout from "./components/Checkout";
+import Cart from "./components/cart";
+import Checkout from "./components/checkout";
 import Order from "./components/order";
-import Profile from "./components/Profile";
+import Profile from "./components/profile";
 import Assistant from "./components/assistant";
 import SR from "./components/SR";
 import Product from "./components/product";
